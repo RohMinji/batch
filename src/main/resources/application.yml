@@ -1,0 +1,18 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://211.34.231.81:32679/bitnami_airflow
+    username: "bn_airflow"
+    password: "bitnami_airflow"
+    hikari:
+      pool-name: hikari-cp
+      maximum-pool-size: "30"
+      minimum-idle: 2
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true

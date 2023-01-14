@@ -1,13 +1,18 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true 
   batch:
     job:
-      enabled: false
+      enabled: true
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://211.34.231.81:32679/bitnami_airflow
+    url: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
     username: "bn_airflow"
     password: "bitnami_airflow"
     hikari:
+      jdbcUrl: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
+      username: "bn_airflow"
+      password: "bitnami_airflow"
       pool-name: hikari-cp
       maximum-pool-size: "30"
       minimum-idle: 2

@@ -49,6 +49,7 @@ public class BatchConfiguration {
             .dataSource(dataSource)
             .build();
     }
+    
 	// tag::jobstep[]
 	@Bean 
 	public Job sampleDb2DbChunkJob(JobRepository jobRepository,SampleJobListener jobListener, Step sampleDb2DbChunkStep) {

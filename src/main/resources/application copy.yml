@@ -1,11 +1,14 @@
 spring:
   main:
-    allow-bean-definition-overriding: true
+    allow-bean-definition-overriding: true 
   batch:
     job:
       enabled: true
-#    jdbc:
-#      initialize-schema: embedded
+    jdbc:
+      driver: org.postgresql.Driver
+      url: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
+      username: bn_airflow
+      password: bitnami_airflow
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
@@ -23,3 +26,6 @@ spring:
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
+  logging:
+    level:
+      root: debug

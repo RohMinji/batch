@@ -1,4 +1,4 @@
-package com.example.batch;
+package com.example.batchprocessing;
 
 public class Person {
 
@@ -23,16 +23,14 @@ public class Person {
 		return firstName;
 	}
 
-
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-
 	public String getLastName() {
 		return lastName;
 	}
-
+	
 	public void setBirthDate(String birthDate) {
 		this.birthDate = birthDate;
 	}
@@ -43,7 +41,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "firstName: " + firstName + ", lastName: " + lastName + ", birthDate: " + birthDate;
+		return "firstName: " + firstName + ", lastName: " + lastName+ ", birthDate: " + birthDate;
 	}
 
 }

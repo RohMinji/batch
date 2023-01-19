@@ -1,2 +1,2 @@
-# edu12-11
-spring batch 
+# Spring batch
+DB to DB

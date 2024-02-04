@@ -7,14 +7,14 @@ spring:
 #    jdbc:
 #      initialize-schema: embedded
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
-    username: "bn_airflow"
-    password: "bitnami_airflow"
+    url: jdbc:mariadb://211.43.13.165:31838/my_database
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: "root"
+    password: "sRMNpgwRs1"
     hikari:
-      jdbcUrl: jdbc:postgresql://211.34.231.84:32679/bitnami_airflow
-      username: "bn_airflow"
-      password: "bitnami_airflow"
+      jdbcUrl: jdbc:mariadb://211.43.13.165:31838/my_database
+      username: "root"
+      password: "sRMNpgwRs1"
       pool-name: hikari-cp
       maximum-pool-size: "30"
       minimum-idle: 2
